@@ -3,13 +3,13 @@ def badge_maker(name)
   "Hello, my name is #{name}."
 end
 
-def batch_badge_creator(name)
+def batch_badge_creator(names)
   badge=[]
-  name.each{|name|badge << "Hello, my name is #{name}."}
-  badge
+  names.each{|name|badges << "Hello, my name is #{name}."}
+  badges
 end
 
-def assign_rooms(name)
+def assign_rooms(names)
   rooms = []
   name.each_with_index{|person_name, room_number| rooms << "Hello, #{person_name}! You'll be assigned to room #{room_number+1}!"}
   rooms
